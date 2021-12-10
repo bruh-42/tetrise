@@ -32,5 +32,8 @@ basic.forever(function () {
     basic.pause(1000)
 })
 basic.forever(function () {
-	
+    basic.pause(2000)
+    if (0 == 5) {
+        sprite.change(LedSpriteProperty.Y, -1)
+    }
 })
