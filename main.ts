@@ -33,7 +33,15 @@ basic.forever(function () {
 })
 basic.forever(function () {
     basic.pause(2000)
-    if (0 == 5) {
-        sprite.change(LedSpriteProperty.Y, -1)
+    if (sprite.get(LedSpriteProperty.Y) == 4) {
+        if (sprite.get(LedSpriteProperty.Y) == 4) {
+            sprite.change(LedSpriteProperty.Y, -1)
+            if (sprite.get(LedSpriteProperty.Y) == 3) {
+                sprite.change(LedSpriteProperty.Y, -1)
+                if (sprite.get(LedSpriteProperty.Y) == 2) {
+                    sprite.change(LedSpriteProperty.Y, -1)
+                }
+            }
+        }
     }
 })
